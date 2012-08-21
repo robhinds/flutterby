@@ -1,0 +1,115 @@
+body {
+	background-color: #666600;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#theform {
+	background-color: #FDFDF9;
+	width: 50em;
+}
+
+#theform fieldset {
+	height: 30em;
+	width: 13.75em;
+	border: 0;
+	margin: 0;
+	padding: 1.25em;
+	float: left;
+}
+
+#theform fieldset legend {
+	font-size: 5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #1E1E26;
+}
+
+#theform fieldset legend span {
+	display: none;
+}
+
+#theform fieldset h3 {
+	height: 5em;
+	font-size: 1.25em;
+}
+
+#theform fieldset div.help {
+	color: #4DEA50;
+	font-size: 0.89em;
+	font-weight: bold;
+	height: 6.25em;
+}
+
+#theform fieldset label {
+	font-size: 0.89em;
+	display: block;
+	line-height: 1.86em;
+}
+
+#theform fieldset input {
+	font-size: 1em;
+	height: 1.5em;
+}
+
+	
+/* Error Styling */
+#theform fieldset.error,
+#theform fieldset.error legend,
+#theform fieldset.error div.help {
+	color: #14A916;
+}
+
+#theform fieldset strong.error {
+	color: #fff;
+	background-color: #A91614;
+	padding: 0.25em;
+	font-size: 0.89em;
+	font-weight: bold;
+	display: block;
+}
+
+
+/* Part 4 Styling */
+#theform #pt4 {
+	clear: both;
+	width: 47.5em;
+	height: 6.25em;
+
+	padding: 1.25em;
+}
+
+#theform #pt4 legend {
+	display: none;
+}
+
+#theform #pt4 h3 {
+	display: none;
+}
+
+#theform #pt4 #disclaimer {
+	width: 22em;
+	float: left;
+	font-size: 0.89em;
+}
+
+#theform #pt4 input {
+	height: 3em;
+	font-size: 1.25em;
+	width: 20em;
+	color: #666666; 
+	background: #f3f3f3;
+	font-weight: bold;
+	border-bottom: 	1px solid #999999;
+	border-right: 1px solid #999999;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;	
+	float: right;
+}
+
+#copyright {
+	clear: both;
+	padding: 0.62em;
+	font-size: 1em;
+	color: #9F9F00;
+	font-style: italic;
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<definition extends="main" name="anonhomepage">
+		<put-attribute name="mainContent" value="/WEB-INF/views/loginForm.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="register">
+		<put-attribute name="mainContent" value="/WEB-INF/views/registrationForm.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="userhomepage">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/userActivityFeed.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/userRightCol.jsp"/>
+		<put-attribute name="rightColumn2" value="/WEB-INF/views/teamRightCol.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="otheruserhomepage">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/viewUserLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/viewUserActivityFeed.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/viewUserRightCol.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="teamhomepage">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/teamLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/teamDetailPage.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/teamRightCol.jsp"/>
+	</definition>
+	
+	<definition extends="widescreen" name="teamorgchart">
+		<put-attribute name="mainContent" value="/WEB-INF/views/teamOrgChart.jsp"/>
+	</definition>
+	
+	<!-- To-Do List Page -->
+	<definition extends="main" name="todoList">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/todoListView.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/todoRightColumn.jsp"/>
+	</definition>
+	
+	<!-- Search Results Page -->
+	<definition extends="main" name="searchResults">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/searchResults.jsp"/>
+	</definition>
+	
+	<!-- Question List Page -->
+	<definition extends="main" name="questionList">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/questionListView.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/questionRightColumn.jsp"/>
+	</definition>	
+	
+	<!-- Question Detail Page -->
+	<definition extends="main" name="questionDetail">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/questionDetailView.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/questionDetailRightColumn.jsp"/>
+	</definition>	
+	
+	<!-- WorkTask List Page -->
+	<definition extends="main" name="workTaskList">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/workTaskListView.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/workTaskRightColumn.jsp"/>
+	</definition>	
+	
+	<!-- WorkTask Detail Page -->
+	<definition extends="main" name="workTaskDetail">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/workTaskDetailView.jsp"/>
+		<put-attribute name="rightColumn1" value="/WEB-INF/views/workTaskDetailRightColumn.jsp"/>
+	</definition>		
+
+	<!-- Admin Page -->
+	<definition extends="main" name="adminPage">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/userLeftCol.jsp"/>
+		<put-attribute name="mainContent" value="/WEB-INF/views/adminControls.jsp"/>
+	</definition>
+	
+	<!-- TODO FIX LEFT AND RIGHT COLUMNS FOR EMAIL NAVIGATION -->
+	<definition extends="main" name="email">
+		<put-attribute name="leftColumn" value="/WEB-INF/views/emailAccordion.jsp"/>
+	</definition>
+	<definition extends="email" name="emailCompose">
+		<put-attribute name="mainContent" value="/WEB-INF/views/emailCompose.jsp"/>
+	</definition>
+	<definition extends="email" name="emailFolder">
+		<put-attribute name="mainContent" value="/WEB-INF/views/emailFolderView.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="dataAccessFailure">
+		<put-attribute name="mainContent" value="/WEB-INF/views/errors/dataAccessFailure.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="resourceNotFound">
+		<put-attribute name="mainContent" value="/WEB-INF/views/errors/resourceNotFound.jsp"/>
+	</definition>
+	 
+	<definition extends="main" name="uncaughtException">
+		<put-attribute name="mainContent" value="/WEB-INF/views/errors/uncaughtException.jsp"/>
+	</definition>
+	
+	<definition extends="main" name="login">
+		<put-attribute name="mainContent" value="/WEB-INF/views/errors/loginFailure.jsp"/>
+    </definition>
+    
+    
+    
+    <definition extends="main" name="genericError">
+		<put-attribute name="mainContent" value="/WEB-INF/views/errors/errorBody.jsp"/>
+    </definition>
+    
+    <!-- Dash tiles -->
+    <definition name="dash.message" template="/WEB-INF/views/dashboardMenus/messageDash.jsp">
+	  <put-attribute name="title" value="Tiles tutorial homepage" />
+	</definition>
+</tiles-definitions>

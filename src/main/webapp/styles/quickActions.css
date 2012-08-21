@@ -1,0 +1,51 @@
+#quickActionDiv a {
+    color:#ccc;
+    text-decoration:none;
+}
+ 
+#quickActionDiv a:hover {
+    color:#ccc;
+    text-decoration:none
+}
+ 
+#tabMenu {
+    margin:0;
+    padding:0 0 0 15px;
+    list-style:none;
+}
+ 
+#tabMenu li {
+    float:left;
+    height:35px;
+    width:150px;
+    cursor:pointer;
+    cursor:hand
+}
+
+ 
+/* this is the button images */
+#quickActionDiv li.statusTab {background:url(../images/quickStatus.png) no-repeat 0 -35px;}
+#quickActionDiv li.questionTab {background:url(../images/quickQuestion.png) no-repeat 0 -35px;}
+#quickActionDiv li.todoTab {background:url(../images/quickTodo.png) no-repeat 0 -35px;}
+#quickActionDiv li.ticketTab {background:url(../images/quickTicket.png) no-repeat 0 -35px;}
+#quickActionDiv li.questionsAskedToYou {background:url(../images/questionsToYou.png) no-repeat 0 -35px;}
+#quickActionDiv li.questionsAskedByYou {background:url(../images/questionsYouAsked.png) no-repeat 0 -35px;}
+#quickActionDiv li.ticketsAssignedToYou {background:url(../images/ticketsForYou.png) no-repeat 0 -35px;}
+#quickActionDiv li.ticketsRaisedByYou {background:url(../images/ticketsYouRaised.png) no-repeat 0 -35px;}
+ 
+#quickActionDiv li.mouseover {background-position:0 0;}
+#quickActionDiv li.mouseout {background-position:0 -35px;}
+#quickActionDiv li.selected {background-position:0 0;}
+
+
+.box {}
+.boxBody {} 
+.boxBody div.parent {
+    display:none;
+}
+.boxBody div.show {
+    display:block;
+}
+.boxBody #category a {
+    display:block
+}
