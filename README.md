@@ -1,4 +1,4 @@
-http://www.flutterbysoftware.com
+http://robhinds.github.io/flutterby/
 
 #About Flutterby#
 For several years we have been working on large scale enterprise software projects, often spanning several countries, and we got fed up having to use different applications to handle defects, manage work requests, ask questions and generally communicate (not to mention traipsing through the different applications if you ever needed to find something again!). So Flutterby was born!
